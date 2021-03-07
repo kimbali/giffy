@@ -1,0 +1,37 @@
+.gifs-list {
+    min-height: 100vh;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+
+    /* column-count: 4; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0 1rem; 
+    /* Solo firfox - masonry */
+    grid-template-rows: masonry;
+}
+
+.Gif {
+    position: relative;
+    margin: 0.5rem;
+    max-width: 100%;
+    /* display: inline-block; */
+}
+
+.Gif img {
+    width: 100%;
+    object-fit: contain;
+    vertical-align: top;
+}
+
+.Gif p {
+    color: #19ee35;
+    position: absolute;
+    bottom: 0;
+    right: 0.5rem;
+    font-size: 14px;
+    margin: 0;
+    text-transform: capitalize;
+}

@@ -1,0 +1,23 @@
+.search-word-input input {
+    padding: 1rem;
+    background-color: black;
+    color: var(--verde-loro);
+    font-size: 1rem;
+    border: 4px solid var(--verde-loro);
+}
+.search-word-input input::placeholder {
+    color: var(--verde-loro);
+}
+
+.search-word-input button {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: var(--verde-loro);
+    color: black;
+}
+
+.search-word-input button:hover {
+    background-color: black;
+    color: var(--verde-loro);
+    cursor: pointer;
+}
