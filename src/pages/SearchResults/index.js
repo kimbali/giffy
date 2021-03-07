@@ -15,6 +15,7 @@ export default function SearchResults({ params}) {
 
   console.log('isNearScreen: ', isNearScreen);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const debounceHandleNextPage = useCallback(debounce(
     () => setPage(prevPage => prevPage + 1), 1000), 
   []);
